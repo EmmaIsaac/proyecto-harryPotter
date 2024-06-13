@@ -123,6 +123,28 @@ main {
   margin: 0 auto;
 }
 
+.secciones {
+  width: 80%;
+  margin: 30px auto;  
+}
+.secciones h2 {
+  margin: 15px;
+}
+.secciones p {
+  margin: 10px;
+}
+
+#explora {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+#explora > div {
+  width: 300px;  
+}
+
 footer {
   background-color: var(--bg-secundario);
   color: white;
@@ -173,7 +195,7 @@ footer {
 .card h3 {
   /* text-decoration: underline; */
   text-align: center;
-  margin: 10px;
+  margin: 5px;
 }
 
 .card p {

@@ -2,11 +2,10 @@ const $grid = document.querySelector("div");
 
 const url = "https://hp-api.onrender.com/api/characters";
 
-fetch(url)
+const renderFetch = fetch(url)
 .then((respuesta) => {
     return respuesta.json();
 })
-
 .then((data) => {
     const personajes = data;
     console.log(personajes);
@@ -32,3 +31,5 @@ fetch(url)
         `;
     });    
 });
+
+renderFetch();
