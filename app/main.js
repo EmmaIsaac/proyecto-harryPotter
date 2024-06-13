@@ -34,4 +34,33 @@ const renderExplora = () => {
     });
 };
 
+const $comunidadDiv = document.getElementById("comunidad");
+
+const renderComunidad = () => {
+    const comunidad = [
+        {
+            titulo: "Foros de Discusión",
+            descripcion: "Comparte teorías, participa en debates y conecta con otros fans del mundo mágico."
+        },
+        {
+            titulo: "Eventos",
+            descripcion: "Entérate de los próximos eventos y convenciones dedicados a Harry Potter."
+        },
+        {
+            titulo: "Concursos y Premios",
+            descripcion: "Participa en nuestros concursos temáticos y gana premios increíbles."
+        },
+    ];
+
+    comunidad.forEach((e) => {
+        $comunidadDiv.innerHTML += `
+        <div>
+        <h3>${e.titulo}</h3>
+        <p>${e.descripcion}</p>
+        </div>
+        `;
+    });
+};
+
 renderExplora();
+renderComunidad();
