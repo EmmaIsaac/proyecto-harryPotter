@@ -11,7 +11,7 @@ fetch(url)
     const renderPersonajes = (personajes) => {
     $grid.innerHTML = "";
     personajes.forEach((personaje) => {
-        const placeholder = "../assets/image/placeholder.jpg";
+        const placeholder = "../assets/image/imagen-vacia.webp";
         const imagen = personaje.image ? personaje.image : placeholder;
         const casa = personaje.house ? personaje.house : "unknown";
         const genero = personaje.gender ? personaje.gender : "unknown";
