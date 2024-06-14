@@ -40,14 +40,17 @@ const renderComunidad = () => {
     const comunidad = [
         {
             titulo: "Foros de Discusión",
+            icono: "<i class='bx bxs-comment-detail'></i>",
             descripcion: "Comparte teorías, participa en debates y conecta con otros fans del mundo mágico."
         },
         {
             titulo: "Eventos",
+            icono: "<i class='bx bxs-calendar-event' ></i>",
             descripcion: "Entérate de los próximos eventos y convenciones dedicados a Harry Potter."
         },
         {
             titulo: "Concursos y Premios",
+            icono: "<i class='bx bxs-trophy'></i>",
             descripcion: "Participa en nuestros concursos temáticos y gana premios increíbles."
         },
     ];
@@ -55,7 +58,8 @@ const renderComunidad = () => {
     comunidad.forEach((e) => {
         $comunidadDiv.innerHTML += `
         <div>
-        <h3>${e.titulo}</h3>
+        <h3>${e.titulo}</h3>        
+        <p class="iconos">${e.icono}</p>
         <p>${e.descripcion}</p>
         </div>
         `;

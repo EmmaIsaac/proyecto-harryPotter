@@ -158,6 +158,11 @@ main {
   margin-top: 15px;
 }
 
+.iconos {
+  font-size: 30px;
+  color: var(--bg-secundario);
+}
+
 footer {
   background-color: var(--bg-secundario);
   color: white;
