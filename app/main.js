@@ -1,34 +1,39 @@
-const $exploraDiv = document.getElementById("explora");
+const $casasDiv = document.getElementById("casas");
 
-const renderExplora = () => {
-    const explora = [
+const renderCasas = () => {
+    const casas = [
         {
-            titulo: "Noticias y Actualizaciones",
-            descripcion: "Mantente al día con las últimas novedades sobre Harry Potter, desde nuevos lanzamientos hasta eventos especiales y más."
+            escudo: "../assets/image/escudoGryffinddor.png",
+            nombre: "Gryffinddor",
+            descripcion: "La Casa Gryffindor fue fundada por el célebre mago Godric Gryffindor. Godric sólo aceptaba en su casa a aquellos magos y brujas que tenían valentía, disposición, coraje y caballerosidad, ya que éstas son las cualidades de un auténtico Gryffindor."
         },
         {
-            titulo: "Personajes",
-            descripcion: "Conoce en profundidad a tus personajes favoritos. Desde Harry, Hermione y Ron, hasta Dumbledore, Snape y Voldemort."
+            escudo: "../assets/image/escudoHufflepuff.png",
+            nombre: "Hufflepuff",
+            descripcion: "La Sala Común de Hufflepuff se encuentra en una bodega en el mismo pasillo subterráneo que la cocina. Inicialmente, Hufflepuff buscaba alumnos que simplemente quisieran pertenecer a esa casa, aunque actualmente busca alumnos leales, honestos y que no teman el trabajo pesado."
         },
         {
-            titulo: "Hogwarts",
-            descripcion: "Aprende todo sobre la escuela de magia y hechicería más famosa del mundo. Desde sus casas (Gryffindor, Slytherin, Ravenclaw y Hufflepuff) hasta sus profesores y clases."
+            escudo: "../assets/image/escudoRavenclaw.png",
+            nombre: "Ravenclaw",
+            descripcion: "La Casa Ravenclaw se encuentra en una torre en el ala oeste del castillo. En la entrada se encuentra una estatua con forma de águila que dice acertijos y sólo te deja entrar si lo resuelves. Sus colores son el azul y el bronce. Ravenclaw busca alumnos creativos, curiosos y que siempre busquen la respuesta."
         },
         {
-            titulo: "Hechizos y Pociones",
-            descripcion: "Sumérgete en el estudio de la magia. Descubre los hechizos más icónicos y las pociones más poderosas del universo de Harry Potter."
-        },
-        {
-            titulo: "Merchandising",
-            descripcion: "Encuentra productos oficiales, desde varitas y capas hasta libros y figuras de colección."
-        },
+            escudo: "../assets/image/escudoSlytherin.png",
+            nombre: "Slytherin",
+            descripcion: "La Casa Slytherin está caracterizada principalmente por la ambición y la astucia. Fue fundada por el mago Salazar Slytherin. La Sala Común está situada en las mazmorras, pasando por un serie de numerosos pasillos subterráneos. Posiblemente se llega a ellos a través del Vestíbulo de Hogwarts ."
+        },        
     ];
 
-    explora.forEach((e) => {
-        $exploraDiv.innerHTML += `
-        <div class="card">
-        <h3>${e.titulo}</h3>
+    casas.forEach((e) => {
+        $casasDiv.innerHTML += `
+        <div class="casa">
+        <div class="casa_img">
+        <img src="${e.escudo}" alt="Escudo de ${e.nombre}">
+        </div>
+        <div class="casa_desc"
+        <h3>${e.nombre}</h3>
         <p>${e.descripcion}</p>
+        </div>
         </div>
         `;
     });
@@ -66,5 +71,5 @@ const renderComunidad = () => {
     });
 };
 
-renderExplora();
+renderCasas();
 renderComunidad();

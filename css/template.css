@@ -73,7 +73,7 @@ nav ul li a:hover {
 }
 
 body {
-  background-color: var(--bg-pricipal);
+  background-color: var(--bg-pricipal);  
 }
 
 main {
@@ -88,6 +88,7 @@ main {
   background-image: linear-gradient(rgba(255, 255, 255, 0.199), rgba(253, 253, 253, 0.822)),
   url(../assets/image/banner1.png);
   background-size: cover;  
+  box-shadow: 3px 2px 12px -3px rgb(82, 82, 82);
 }
 
 .desc {
@@ -124,7 +125,7 @@ main {
 
 .secciones {
   width: 80%;
-  margin: 30px auto;  
+  margin: 50px auto;  
 }
 .secciones h2 {
   margin: 15px;
@@ -133,15 +134,34 @@ main {
   margin: 10px;
 }
 
-#explora {
+#casas {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 20px;    
 }
 
-#explora > div {
-  width: 300px;  
+.casa {
+  width: 500px;  
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: white;
+  border-radius: 5px;
+  padding: 20px;
+  background-color: var(--bg-secundario);
+}
+.casa_img {
+  width: 40%;    
+}
+.casa_img img {
+  width: 100%;
+}
+.casa_desc {
+  width: 60%;
+}
+.casa_desc p {
+  text-align: left;
 }
 
 .comunidad {
