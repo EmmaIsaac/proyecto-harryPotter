@@ -114,8 +114,8 @@ main {
   background-color: rgba(255, 255, 255, 0.199);  
 }
 .video iframe {
-    width: 560px;
-    height: 315px;    
+    width: 35rem;
+    height: 19.688rem;    
 }
 
 .intro {
@@ -210,4 +210,46 @@ footer {
   position: fixed;
   width: 100%;
   bottom: 0;
+}
+
+@media (max-width: 880px) {
+  .container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .desc {
+    width: 100%;    
+  }
+  .video {
+    width: 100%;      
+  }
+}
+
+@media (max-width: 480px) {
+  main {
+    padding: 0;
+    margin-bottom: 100px;
+  }
+  .container {
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  .video {
+    padding: 0;
+  }
+  .casa {
+    flex-direction: column;
+  }
+  .casa_img {
+    width: 100%;    
+  }
+  .casa_img img {
+    width: 100%;
+  }
+  .casa_desc {
+    width: 100%;
+  }
+  .casa_desc p {
+    text-align: center;
+  }
 }

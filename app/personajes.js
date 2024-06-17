@@ -45,4 +45,4 @@ fetch(url)
 
     renderPersonajes(filtroPersonajes);
     });
-})  
+});  
