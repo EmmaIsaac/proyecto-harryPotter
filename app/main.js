@@ -30,11 +30,44 @@ const renderCasas = () => {
         <div class="casa_img">
         <img src="${e.escudo}" alt="Escudo de ${e.nombre}">
         </div>
-        <div class="casa_desc"
+        <div class="casa_desc">
         <h3>${e.nombre}</h3>
         <p>${e.descripcion}</p>
         </div>
         </div>
+        `;
+    });
+};
+
+const $hechizosDiv = document.getElementById("hechizos");
+
+const renderHechizos = () => {
+    const hechizos = [
+        {
+            nombre:"Expelliarmus",
+            descripcion: "El encantamiento desarmador. Este hechizo es utilizado para desarmar a un oponente, haciendo que su varita vuele fuera de su mano."
+        },
+        {
+            nombre:"Expecto Patronum",
+            descripcion: "El encantamiento patronus. Este hechizo conjura un Patronus, una manifestación mágica de energía positiva utilizada para repeler Dementores."
+        },
+        {
+            nombre:"Avada Kedavra",
+            descripcion: "La maldición asesina. Es uno de los tres maleficios imperdonables y causa la muerte instantánea de la víctima."
+        },
+        {
+            nombre:"Alohomora",
+            descripcion: "El encantamiento de apertura. Este hechizo se usa para desbloquear puertas y cerraduras cerradas mágicamente."
+        },
+    ];
+
+    hechizos.forEach((e) => {
+        $hechizosDiv.innerHTML += `
+        <div class="hechizo">
+        <h3>${e.nombre}:</h3>
+        <p>${e.descripcion}</p>
+        <hr>
+        </div>        
         `;
     });
 };
@@ -72,4 +105,5 @@ const renderComunidad = () => {
 };
 
 renderCasas();
+renderHechizos();
 renderComunidad();

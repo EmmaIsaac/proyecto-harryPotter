@@ -164,6 +164,25 @@ main {
   text-align: left;
 }
 
+.aprendizaje {
+  background-image: linear-gradient(rgba(78, 77, 77, 0.836), rgb(141, 141, 141)),
+  url(../assets/image/fantasy-4253765.jpg);
+  background-size: cover;  
+  margin-top: 30px;
+  padding: 30px;
+  opacity: 0.85;
+  color: whitesmoke;
+  text-align: left;  
+  text-shadow: 1px 1px 1px rgb(82, 82, 82);
+  box-shadow: 3px 2px 12px -3px rgb(82, 82, 82);
+}
+
+.hechizo {
+  background-color: var(--bg-secundario);
+  padding: 10px;  
+  color: var(--c-title);
+}
+
 .comunidad {
   margin: 50px 0;
 }
