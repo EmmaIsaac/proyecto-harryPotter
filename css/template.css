@@ -319,4 +319,9 @@ footer {
   .casa_desc p {
     text-align: center;
   }
+  .go-top-container {
+    bottom: 9rem;
+    right: 1.2rem;
+    
+  }
 }
