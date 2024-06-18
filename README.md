@@ -5,6 +5,8 @@
 ## Características
 
 - **Trailer**: Podes disfrutar del trailer de la primer pelicula de la saga.
+- **Casa de Howards**: Descripción de las cuatro casas del colegio Howards y las caracteristicas de sus estudiantes.
+- **Hechizos mas Iconicos**: Una descripción de los hechizos mas significativos de la trama de las peliculas.
 - **Lista de Personajes**: Conoce a todos los personajes de la saga de Harry Potter, desde los más importantes hasta los secundarios. Los cuales son consumidos a traves de la API: https://hp-api.onrender.com/api/characters
 
 ## Instalación
