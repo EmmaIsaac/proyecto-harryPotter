@@ -1,3 +1,5 @@
+import { initScrollHandler } from './scrollHandler.js';
+
 const $casasDiv = document.getElementById("casas");
 
 const renderCasas = () => {
@@ -104,6 +106,7 @@ const renderComunidad = () => {
     });
 };
 
+initScrollHandler();
 renderCasas();
 renderHechizos();
 renderComunidad();
