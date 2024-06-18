@@ -1,6 +1,6 @@
-# Fan Page de Harry Potter
+# Proyecto Harry Potter
 
-¡Bienvenidos Proyecto Harry Potter! Esta página está dedicada a todos los fanáticos de la maravillosa saga creada por J.K. Rowling. Aquí podrás explorar información detallada sobre los personajes, sus historias y mucho más.
+¡Bienvenidos al repositorio de Proyecto Harry Potter! Esta página está dedicada a todos los fanáticos de la maravillosa saga creada por J.K. Rowling. Aquí podrás explorar información detallada sobre los personajes, sus historias y mucho más.
 
 ## Características
 
