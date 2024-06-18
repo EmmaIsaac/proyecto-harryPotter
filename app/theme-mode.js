@@ -3,6 +3,7 @@ const $sun = document.getElementById("sun");
 const $moon = document.getElementById("moon");
 const $body = document.body;
 
+//Definir comportamiento del boton al dar click...
 const handleDisplayIcons = () => {
     let displaySun = getComputedStyle($sun).display;
     if (displaySun === "none") {
@@ -21,10 +22,12 @@ const handleDisplayIcons = () => {
     }
     };
 
+//Definir funcion para agregar clase al body...
     const handleClassThemeMode = () => {
         $body.classList.toggle("dark-mode");  
     };
 
+//Declarar el evento click...
     $button.addEventListener("click", () => {
         handleDisplayIcons();
         handleClassThemeMode();

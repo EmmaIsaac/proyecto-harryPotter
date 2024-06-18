@@ -37,7 +37,7 @@
     color: white;
 }
 
-  .dark-mode *:not(i) {
+  .dark-mode *:not(i, input) {
     color: white;
 }
 

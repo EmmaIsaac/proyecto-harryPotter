@@ -1,3 +1,5 @@
+import { initScrollHandler } from './scrollHandler.js';
+
 const $grid = document.querySelector("div");
 
 const url = "https://hp-api.onrender.com/api/characters";
@@ -16,7 +18,8 @@ fetch(url)
         const casa = personaje.house ? personaje.house : "unknown";
         const genero = personaje.gender ? personaje.gender : "unknown";
 
-        $grid.innerHTML += `
+        if (personaje.image || personaje.hogwartsStudent || personaje.hogwartsStaff) {
+            $grid.innerHTML += `
         <div class="card">
             <div class="card_img">
             <img src="${imagen}" alt="${personaje.name}">
@@ -29,6 +32,7 @@ fetch(url)
             </div>
         </div>
         `;
+        }
     });
     };
 
@@ -46,3 +50,5 @@ fetch(url)
     renderPersonajes(filtroPersonajes);
     });
 });  
+
+initScrollHandler();
